@@ -1,0 +1,949 @@
+{
+  "clean": {
+    "seed": 0,
+    "probes": [
+      {
+        "name": "reliability",
+        "value": 0.795832877466241,
+        "detail": "Krippendorff's alpha (nominal) = 0.796 over 900 pairable ratings; the conventional floor is 0.667.",
+        "n": 900,
+        "unit": "alpha",
+        "ci": [
+          0.7510588699988038,
+          0.8354628354279874
+        ],
+        "innocent": [
+          0.667,
+          1.0
+        ],
+        "triggered": false
+      },
+      {
+        "name": "rogue raters",
+        "value": 0.0,
+        "detail": "0 of 10 raters agree with the rest credibly worse than the pool agrees with itself. Lowest rater-vs-rest alpha: 0.740 (r08).",
+        "n": 10,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rater bias",
+        "value": 0.0,
+        "detail": "0 of 10 raters use the labels credibly differently from the rest (total variation distance beyond 0.1). Largest divergence: 0.09 (r06).",
+        "n": 10,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "drift",
+        "value": 0.00328864766738457,
+        "detail": "alpha on the earlier half of items minus the later half = +0.003; a credible gap means the guidelines meant something different over time.",
+        "n": 300,
+        "unit": "alpha gap",
+        "ci": [
+          -0.0841693639134411,
+          0.09301953613083301
+        ],
+        "innocent": [
+          -0.1,
+          0.1
+        ],
+        "triggered": false
+      },
+      {
+        "name": "split leakage",
+        "value": 0.0,
+        "detail": "0 duplicated texts span more than one split (0 items are duplicates of another item). Any leak means the test split is partly memorized.",
+        "n": 300,
+        "unit": "texts",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "stale gold",
+        "value": 0.0,
+        "detail": "0.0% of 300 double-rated gold items are contradicted by a unanimous crowd; those golds are likely wrong or outdated.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "innocent": [
+          0.0,
+          0.02
+        ],
+        "triggered": false
+      },
+      {
+        "name": "ambiguity",
+        "value": 0.22,
+        "detail": "22.0% of 300 multi-rated items are contested (at least one dissenting rating) \u2014 where disagreement lives, and where a single 'true' label may not exist. Descriptive; never flags.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.17666666666666667,
+          0.26666666666666666
+        ],
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "prevalence",
+        "value": 0.31222222222222223,
+        "detail": "most common label covers 31.2% of ratings; raw agreement 84.8% vs alpha 0.796. When these disagree, the skew \u2014 not the raters \u2014 is doing the agreeing. Descriptive; never flags.",
+        "n": 900,
+        "unit": "share",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rating depth",
+        "value": 3.0,
+        "detail": "mean 3.0 ratings per item, 0% single-rated. Spearman-Brown: majority-of-k labels need ~1.0 raters per item for 80% reliability at this alpha. Descriptive; never flags.",
+        "n": 300,
+        "unit": "ratings/item",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      }
+    ],
+    "skipped": [],
+    "flags": []
+  },
+  "careless-crowd": {
+    "seed": 0,
+    "probes": [
+      {
+        "name": "reliability",
+        "value": 0.1779227326949312,
+        "detail": "Krippendorff's alpha (nominal) = 0.178 over 900 pairable ratings; the conventional floor is 0.667.",
+        "n": 900,
+        "unit": "alpha",
+        "ci": [
+          0.12964517308200818,
+          0.2245940148373529
+        ],
+        "innocent": [
+          0.667,
+          1.0
+        ],
+        "triggered": true
+      },
+      {
+        "name": "rogue raters",
+        "value": 0.0,
+        "detail": "0 of 10 raters agree with the rest credibly worse than the pool agrees with itself. Lowest rater-vs-rest alpha: 0.108 (r09).",
+        "n": 10,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rater bias",
+        "value": 0.0,
+        "detail": "0 of 10 raters use the labels credibly differently from the rest (total variation distance beyond 0.1). Largest divergence: 0.14 (r05).",
+        "n": 10,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "drift",
+        "value": -0.016260041088751453,
+        "detail": "alpha on the earlier half of items minus the later half = -0.016; a credible gap means the guidelines meant something different over time.",
+        "n": 300,
+        "unit": "alpha gap",
+        "ci": [
+          -0.1065999936742173,
+          0.07838727615251743
+        ],
+        "innocent": [
+          -0.1,
+          0.1
+        ],
+        "triggered": false
+      },
+      {
+        "name": "split leakage",
+        "value": 0.0,
+        "detail": "0 duplicated texts span more than one split (0 items are duplicates of another item). Any leak means the test split is partly memorized.",
+        "n": 300,
+        "unit": "texts",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "stale gold",
+        "value": 0.006666666666666667,
+        "detail": "0.7% of 300 double-rated gold items are contradicted by a unanimous crowd; those golds are likely wrong or outdated.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.0,
+          0.016666666666666666
+        ],
+        "innocent": [
+          0.0,
+          0.02
+        ],
+        "triggered": false
+      },
+      {
+        "name": "ambiguity",
+        "value": 0.8233333333333334,
+        "detail": "82.3% of 300 multi-rated items are contested (at least one dissenting rating) \u2014 where disagreement lives, and where a single 'true' label may not exist. Descriptive; never flags.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.78,
+          0.8667499999999999
+        ],
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "prevalence",
+        "value": 0.2722222222222222,
+        "detail": "most common label covers 27.2% of ratings; raw agreement 38.3% vs alpha 0.178. When these disagree, the skew \u2014 not the raters \u2014 is doing the agreeing. Descriptive; never flags.",
+        "n": 900,
+        "unit": "share",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rating depth",
+        "value": 3.0,
+        "detail": "mean 3.0 ratings per item, 0% single-rated. Spearman-Brown: majority-of-k labels need ~18.5 raters per item for 80% reliability at this alpha. Descriptive; never flags.",
+        "n": 300,
+        "unit": "ratings/item",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      }
+    ],
+    "skipped": [],
+    "flags": [
+      "reliability"
+    ]
+  },
+  "one-spammer": {
+    "seed": 0,
+    "probes": [
+      {
+        "name": "reliability",
+        "value": 0.7173906287229745,
+        "detail": "Krippendorff's alpha (nominal) = 0.717 over 881 pairable ratings; the conventional floor is 0.667.",
+        "n": 881,
+        "unit": "alpha",
+        "ci": [
+          0.6686653468256908,
+          0.7675213045045707
+        ],
+        "innocent": [
+          0.667,
+          1.0
+        ],
+        "triggered": false
+      },
+      {
+        "name": "rogue raters",
+        "value": 1.0,
+        "detail": "1 of 12 raters agree with the rest credibly worse than the pool agrees with itself: r00. Lowest rater-vs-rest alpha: 0.031 (r00).",
+        "n": 12,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": true
+      },
+      {
+        "name": "rater bias",
+        "value": 0.0,
+        "detail": "0 of 12 raters use the labels credibly differently from the rest (total variation distance beyond 0.1). Largest divergence: 0.16 (r06).",
+        "n": 12,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "drift",
+        "value": 0.054925240103224526,
+        "detail": "alpha on the earlier half of items minus the later half = +0.055; a credible gap means the guidelines meant something different over time.",
+        "n": 300,
+        "unit": "alpha gap",
+        "ci": [
+          -0.04959977604166052,
+          0.15093526746315258
+        ],
+        "innocent": [
+          -0.1,
+          0.1
+        ],
+        "triggered": false
+      },
+      {
+        "name": "split leakage",
+        "value": 0.0,
+        "detail": "0 duplicated texts span more than one split (0 items are duplicates of another item). Any leak means the test split is partly memorized.",
+        "n": 300,
+        "unit": "texts",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "stale gold",
+        "value": 0.0,
+        "detail": "0.0% of 300 double-rated gold items are contradicted by a unanimous crowd; those golds are likely wrong or outdated.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "innocent": [
+          0.0,
+          0.02
+        ],
+        "triggered": false
+      },
+      {
+        "name": "ambiguity",
+        "value": 0.29333333333333333,
+        "detail": "29.3% of 300 multi-rated items are contested (at least one dissenting rating) \u2014 where disagreement lives, and where a single 'true' label may not exist. Descriptive; never flags.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.24333333333333335,
+          0.3433333333333333
+        ],
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "prevalence",
+        "value": 0.3030646992054484,
+        "detail": "most common label covers 30.3% of ratings; raw agreement 78.9% vs alpha 0.717. When these disagree, the skew \u2014 not the raters \u2014 is doing the agreeing. Descriptive; never flags.",
+        "n": 881,
+        "unit": "share",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rating depth",
+        "value": 2.9366666666666665,
+        "detail": "mean 2.9 ratings per item, 0% single-rated. Spearman-Brown: majority-of-k labels need ~1.6 raters per item for 80% reliability at this alpha. Descriptive; never flags.",
+        "n": 300,
+        "unit": "ratings/item",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      }
+    ],
+    "skipped": [],
+    "flags": [
+      "rogue raters"
+    ]
+  },
+  "leaning-rater": {
+    "seed": 0,
+    "probes": [
+      {
+        "name": "reliability",
+        "value": 0.648061876492407,
+        "detail": "Krippendorff's alpha (nominal) = 0.648 over 1200 pairable ratings; the conventional floor is 0.667.",
+        "n": 1200,
+        "unit": "alpha",
+        "ci": [
+          0.6001375459218166,
+          0.6915180579166162
+        ],
+        "innocent": [
+          0.667,
+          1.0
+        ],
+        "triggered": false
+      },
+      {
+        "name": "rogue raters",
+        "value": 0.0,
+        "detail": "0 of 8 raters agree with the rest credibly worse than the pool agrees with itself. Lowest rater-vs-rest alpha: 0.597 (r00).",
+        "n": 8,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rater bias",
+        "value": 1.0,
+        "detail": "1 of 8 raters use the labels credibly differently from the rest (total variation distance beyond 0.1): r00. Largest divergence: 0.22 (r00).",
+        "n": 8,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": true
+      },
+      {
+        "name": "drift",
+        "value": 0.053331874558914194,
+        "detail": "alpha on the earlier half of items minus the later half = +0.053; a credible gap means the guidelines meant something different over time.",
+        "n": 400,
+        "unit": "alpha gap",
+        "ci": [
+          -0.03571002369871747,
+          0.14738930535596806
+        ],
+        "innocent": [
+          -0.1,
+          0.1
+        ],
+        "triggered": false
+      },
+      {
+        "name": "split leakage",
+        "value": 0.0,
+        "detail": "0 duplicated texts span more than one split (0 items are duplicates of another item). Any leak means the test split is partly memorized.",
+        "n": 400,
+        "unit": "texts",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "ambiguity",
+        "value": 0.3875,
+        "detail": "38.8% of 400 multi-rated items are contested (at least one dissenting rating) \u2014 where disagreement lives, and where a single 'true' label may not exist. Descriptive; never flags.",
+        "n": 400,
+        "unit": "share",
+        "ci": [
+          0.34,
+          0.44
+        ],
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "prevalence",
+        "value": 0.3516666666666667,
+        "detail": "most common label covers 35.2% of ratings; raw agreement 74.1% vs alpha 0.648. When these disagree, the skew \u2014 not the raters \u2014 is doing the agreeing. Descriptive; never flags.",
+        "n": 1200,
+        "unit": "share",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rating depth",
+        "value": 3.0,
+        "detail": "mean 3.0 ratings per item, 0% single-rated. Spearman-Brown: majority-of-k labels need ~2.2 raters per item for 80% reliability at this alpha. Descriptive; never flags.",
+        "n": 400,
+        "unit": "ratings/item",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      }
+    ],
+    "skipped": [
+      {
+        "name": "stale gold",
+        "reason": "needs a gold file; pass --gold gold.jsonl"
+      }
+    ],
+    "flags": [
+      "rater bias"
+    ]
+  },
+  "tiring-crowd": {
+    "seed": 0,
+    "probes": [
+      {
+        "name": "reliability",
+        "value": 0.6416146438130022,
+        "detail": "Krippendorff's alpha (nominal) = 0.642 over 900 pairable ratings; the conventional floor is 0.667.",
+        "n": 900,
+        "unit": "alpha",
+        "ci": [
+          0.588911408520677,
+          0.6911415741354646
+        ],
+        "innocent": [
+          0.667,
+          1.0
+        ],
+        "triggered": false
+      },
+      {
+        "name": "rogue raters",
+        "value": 0.0,
+        "detail": "0 of 10 raters agree with the rest credibly worse than the pool agrees with itself. Lowest rater-vs-rest alpha: 0.558 (r00).",
+        "n": 10,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rater bias",
+        "value": 0.0,
+        "detail": "0 of 10 raters use the labels credibly differently from the rest (total variation distance beyond 0.1). Largest divergence: 0.10 (r09).",
+        "n": 10,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "drift",
+        "value": 0.24789327612834766,
+        "detail": "alpha on the earlier half of items minus the later half = +0.248; a credible gap means the guidelines meant something different over time.",
+        "n": 300,
+        "unit": "alpha gap",
+        "ci": [
+          0.14967369625355212,
+          0.35040738626378326
+        ],
+        "innocent": [
+          -0.1,
+          0.1
+        ],
+        "triggered": true
+      },
+      {
+        "name": "split leakage",
+        "value": 0.0,
+        "detail": "0 duplicated texts span more than one split (0 items are duplicates of another item). Any leak means the test split is partly memorized.",
+        "n": 300,
+        "unit": "texts",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "stale gold",
+        "value": 0.0,
+        "detail": "0.0% of 300 double-rated gold items are contradicted by a unanimous crowd; those golds are likely wrong or outdated.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "innocent": [
+          0.0,
+          0.02
+        ],
+        "triggered": false
+      },
+      {
+        "name": "ambiguity",
+        "value": 0.38,
+        "detail": "38.0% of 300 multi-rated items are contested (at least one dissenting rating) \u2014 where disagreement lives, and where a single 'true' label may not exist. Descriptive; never flags.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.32666666666666666,
+          0.4334166666666666
+        ],
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "prevalence",
+        "value": 0.3022222222222222,
+        "detail": "most common label covers 30.2% of ratings; raw agreement 73.2% vs alpha 0.642. When these disagree, the skew \u2014 not the raters \u2014 is doing the agreeing. Descriptive; never flags.",
+        "n": 900,
+        "unit": "share",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rating depth",
+        "value": 3.0,
+        "detail": "mean 3.0 ratings per item, 0% single-rated. Spearman-Brown: majority-of-k labels need ~2.2 raters per item for 80% reliability at this alpha. Descriptive; never flags.",
+        "n": 300,
+        "unit": "ratings/item",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      }
+    ],
+    "skipped": [],
+    "flags": [
+      "drift"
+    ]
+  },
+  "leaky-split": {
+    "seed": 0,
+    "probes": [
+      {
+        "name": "reliability",
+        "value": 0.795832877466241,
+        "detail": "Krippendorff's alpha (nominal) = 0.796 over 900 pairable ratings; the conventional floor is 0.667.",
+        "n": 900,
+        "unit": "alpha",
+        "ci": [
+          0.7510588699988038,
+          0.8354628354279874
+        ],
+        "innocent": [
+          0.667,
+          1.0
+        ],
+        "triggered": false
+      },
+      {
+        "name": "rogue raters",
+        "value": 0.0,
+        "detail": "0 of 10 raters agree with the rest credibly worse than the pool agrees with itself. Lowest rater-vs-rest alpha: 0.740 (r08).",
+        "n": 10,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rater bias",
+        "value": 0.0,
+        "detail": "0 of 10 raters use the labels credibly differently from the rest (total variation distance beyond 0.1). Largest divergence: 0.09 (r06).",
+        "n": 10,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "drift",
+        "value": 0.00328864766738457,
+        "detail": "alpha on the earlier half of items minus the later half = +0.003; a credible gap means the guidelines meant something different over time.",
+        "n": 300,
+        "unit": "alpha gap",
+        "ci": [
+          -0.0841693639134411,
+          0.09301953613083301
+        ],
+        "innocent": [
+          -0.1,
+          0.1
+        ],
+        "triggered": false
+      },
+      {
+        "name": "split leakage",
+        "value": 12.0,
+        "detail": "12 duplicated texts span more than one split (24 items are duplicates of another item). Any leak means the test split is partly memorized.",
+        "n": 300,
+        "unit": "texts",
+        "ci": null,
+        "innocent": null,
+        "triggered": true
+      },
+      {
+        "name": "stale gold",
+        "value": 0.0,
+        "detail": "0.0% of 300 double-rated gold items are contradicted by a unanimous crowd; those golds are likely wrong or outdated.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "innocent": [
+          0.0,
+          0.02
+        ],
+        "triggered": false
+      },
+      {
+        "name": "ambiguity",
+        "value": 0.22,
+        "detail": "22.0% of 300 multi-rated items are contested (at least one dissenting rating) \u2014 where disagreement lives, and where a single 'true' label may not exist. Descriptive; never flags.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.17666666666666667,
+          0.26666666666666666
+        ],
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "prevalence",
+        "value": 0.31222222222222223,
+        "detail": "most common label covers 31.2% of ratings; raw agreement 84.8% vs alpha 0.796. When these disagree, the skew \u2014 not the raters \u2014 is doing the agreeing. Descriptive; never flags.",
+        "n": 900,
+        "unit": "share",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rating depth",
+        "value": 3.0,
+        "detail": "mean 3.0 ratings per item, 0% single-rated. Spearman-Brown: majority-of-k labels need ~1.0 raters per item for 80% reliability at this alpha. Descriptive; never flags.",
+        "n": 300,
+        "unit": "ratings/item",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      }
+    ],
+    "skipped": [],
+    "flags": [
+      "split leakage"
+    ]
+  },
+  "stale-gold": {
+    "seed": 0,
+    "probes": [
+      {
+        "name": "reliability",
+        "value": 0.795832877466241,
+        "detail": "Krippendorff's alpha (nominal) = 0.796 over 900 pairable ratings; the conventional floor is 0.667.",
+        "n": 900,
+        "unit": "alpha",
+        "ci": [
+          0.7510588699988038,
+          0.8354628354279874
+        ],
+        "innocent": [
+          0.667,
+          1.0
+        ],
+        "triggered": false
+      },
+      {
+        "name": "rogue raters",
+        "value": 0.0,
+        "detail": "0 of 10 raters agree with the rest credibly worse than the pool agrees with itself. Lowest rater-vs-rest alpha: 0.740 (r08).",
+        "n": 10,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rater bias",
+        "value": 0.0,
+        "detail": "0 of 10 raters use the labels credibly differently from the rest (total variation distance beyond 0.1). Largest divergence: 0.09 (r06).",
+        "n": 10,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "drift",
+        "value": 0.00328864766738457,
+        "detail": "alpha on the earlier half of items minus the later half = +0.003; a credible gap means the guidelines meant something different over time.",
+        "n": 300,
+        "unit": "alpha gap",
+        "ci": [
+          -0.0841693639134411,
+          0.09301953613083301
+        ],
+        "innocent": [
+          -0.1,
+          0.1
+        ],
+        "triggered": false
+      },
+      {
+        "name": "split leakage",
+        "value": 0.0,
+        "detail": "0 duplicated texts span more than one split (0 items are duplicates of another item). Any leak means the test split is partly memorized.",
+        "n": 300,
+        "unit": "texts",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "stale gold",
+        "value": 0.06666666666666667,
+        "detail": "6.7% of 300 double-rated gold items are contradicted by a unanimous crowd; those golds are likely wrong or outdated.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.04,
+          0.09666666666666666
+        ],
+        "innocent": [
+          0.0,
+          0.02
+        ],
+        "triggered": true
+      },
+      {
+        "name": "ambiguity",
+        "value": 0.22,
+        "detail": "22.0% of 300 multi-rated items are contested (at least one dissenting rating) \u2014 where disagreement lives, and where a single 'true' label may not exist. Descriptive; never flags.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.17666666666666667,
+          0.26666666666666666
+        ],
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "prevalence",
+        "value": 0.31222222222222223,
+        "detail": "most common label covers 31.2% of ratings; raw agreement 84.8% vs alpha 0.796. When these disagree, the skew \u2014 not the raters \u2014 is doing the agreeing. Descriptive; never flags.",
+        "n": 900,
+        "unit": "share",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rating depth",
+        "value": 3.0,
+        "detail": "mean 3.0 ratings per item, 0% single-rated. Spearman-Brown: majority-of-k labels need ~1.0 raters per item for 80% reliability at this alpha. Descriptive; never flags.",
+        "n": 300,
+        "unit": "ratings/item",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      }
+    ],
+    "skipped": [],
+    "flags": [
+      "stale gold"
+    ]
+  },
+  "easy-but-skewed": {
+    "seed": 0,
+    "probes": [
+      {
+        "name": "reliability",
+        "value": 0.34022853144227405,
+        "detail": "Krippendorff's alpha (nominal) = 0.340 over 900 pairable ratings; the conventional floor is 0.667.",
+        "n": 900,
+        "unit": "alpha",
+        "ci": [
+          0.23824022166596726,
+          0.43989934118790275
+        ],
+        "innocent": [
+          0.667,
+          1.0
+        ],
+        "triggered": true
+      },
+      {
+        "name": "rogue raters",
+        "value": 0.0,
+        "detail": "0 of 10 raters agree with the rest credibly worse than the pool agrees with itself. Lowest rater-vs-rest alpha: 0.151 (r09).",
+        "n": 10,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rater bias",
+        "value": 0.0,
+        "detail": "0 of 10 raters use the labels credibly differently from the rest (total variation distance beyond 0.1). Largest divergence: 0.11 (r08).",
+        "n": 10,
+        "unit": "raters",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "drift",
+        "value": 0.12087699460615065,
+        "detail": "alpha on the earlier half of items minus the later half = +0.121; a credible gap means the guidelines meant something different over time.",
+        "n": 300,
+        "unit": "alpha gap",
+        "ci": [
+          -0.08963264881731514,
+          0.3284420021049933
+        ],
+        "innocent": [
+          -0.1,
+          0.1
+        ],
+        "triggered": false
+      },
+      {
+        "name": "split leakage",
+        "value": 0.0,
+        "detail": "0 duplicated texts span more than one split (0 items are duplicates of another item). Any leak means the test split is partly memorized.",
+        "n": 300,
+        "unit": "texts",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "stale gold",
+        "value": 0.0,
+        "detail": "0.0% of 300 double-rated gold items are contradicted by a unanimous crowd; those golds are likely wrong or outdated.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "innocent": [
+          0.0,
+          0.02
+        ],
+        "triggered": false
+      },
+      {
+        "name": "ambiguity",
+        "value": 0.2733333333333333,
+        "detail": "27.3% of 300 multi-rated items are contested (at least one dissenting rating) \u2014 where disagreement lives, and where a single 'true' label may not exist. Descriptive; never flags.",
+        "n": 300,
+        "unit": "share",
+        "ci": [
+          0.22,
+          0.3233333333333333
+        ],
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "prevalence",
+        "value": 0.8377777777777777,
+        "detail": "most common label covers 83.8% of ratings; raw agreement 80.9% vs alpha 0.340. When these disagree, the skew \u2014 not the raters \u2014 is doing the agreeing. Descriptive; never flags.",
+        "n": 900,
+        "unit": "share",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      },
+      {
+        "name": "rating depth",
+        "value": 3.0,
+        "detail": "mean 3.0 ratings per item, 0% single-rated. Spearman-Brown: majority-of-k labels need ~7.8 raters per item for 80% reliability at this alpha. Descriptive; never flags.",
+        "n": 300,
+        "unit": "ratings/item",
+        "ci": null,
+        "innocent": null,
+        "triggered": false
+      }
+    ],
+    "skipped": [],
+    "flags": [
+      "reliability"
+    ]
+  }
+}
