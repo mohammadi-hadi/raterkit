@@ -219,7 +219,9 @@ accurate a panel of judges is when no gold labels exist at all;
 [abkit](https://github.com/mohammadi-hadi/abkit) applies the same
 audit-before-you-trust pattern to A/B-test readouts;
 [trajectory-judge](https://github.com/mohammadi-hadi/trajectory-judge)
-measures what outcome-only judges miss on agent trajectories.
+measures what outcome-only judges miss on agent trajectories;
+[arenakit](https://github.com/mohammadi-hadi/arenakit) audits the pairwise
+leaderboards those labels and judgements end up building.
 
 ## Citation
 
