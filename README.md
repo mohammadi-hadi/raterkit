@@ -212,6 +212,8 @@ uncertainty on every number and validation by implantation.
 
 Companion projects: [judgekit](https://github.com/mohammadi-hadi/judgekit)
 audits LLM judges the way this audits human raters;
+[judgepanel](https://github.com/mohammadi-hadi/judgepanel) estimates how
+accurate a panel of judges is when no gold labels exist at all;
 [abkit](https://github.com/mohammadi-hadi/abkit) applies the same
 audit-before-you-trust pattern to A/B-test readouts;
 [trajectory-judge](https://github.com/mohammadi-hadi/trajectory-judge)
