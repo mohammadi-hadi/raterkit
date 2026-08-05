@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use raterkit, please cite it as below."
+title: "raterkit: audit a labeled dataset before you trust it"
+type: software
+authors:
+  - family-names: Mohammadi
+    given-names: Hadi
+repository-code: "https://github.com/mohammadi-hadi/raterkit"
+license: MIT
+version: 0.1.0
+date-released: 2026-08-05
