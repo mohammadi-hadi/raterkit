@@ -3,6 +3,8 @@
 Audit a labeled dataset before you trust it.
 
 [![ci](https://github.com/mohammadi-hadi/raterkit/actions/workflows/ci.yml/badge.svg)](https://github.com/mohammadi-hadi/raterkit/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/raterkit)](https://pypi.org/project/raterkit/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21810143.svg)](https://doi.org/10.5281/zenodo.21810143)
 
 Every benchmark score, every fine-tune, every "our judge agrees with humans
 92% of the time" bottoms out in a pile of human labels — produced by raters
@@ -75,7 +77,7 @@ reliability bar almost everywhere, measurably and reproducibly.
 ## Install
 
 ```
-pip install git+https://github.com/mohammadi-hadi/raterkit
+pip install raterkit
 ```
 
 Python 3.11+. Runtime dependencies: numpy, pydantic, matplotlib.
@@ -221,14 +223,17 @@ measures what outcome-only judges miss on agent trajectories.
 
 ## Citation
 
-If raterkit is useful in your work, please cite it (see
-[CITATION.cff](CITATION.cff)):
+Releases are archived on Zenodo. Cite the concept DOI
+[10.5281/zenodo.21810143](https://doi.org/10.5281/zenodo.21810143), which always
+resolves to the latest version; structured metadata is in
+[CITATION.cff](CITATION.cff).
 
 ```bibtex
 @software{mohammadi_raterkit,
   author  = {Mohammadi, Hadi},
   title   = {raterkit: audit a labeled dataset before you trust it},
   url     = {https://github.com/mohammadi-hadi/raterkit},
+  doi     = {10.5281/zenodo.21810143},
   version = {0.1.0},
   year    = {2026}
 }
