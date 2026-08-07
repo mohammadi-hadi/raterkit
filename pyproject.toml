@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "raterkit"
-version = "0.1.0"
+version = "0.1.1"
 description = "Reliability, rogue-rater, drift and leakage diagnostics for labelled data"
 readme = "README.md"
 license = "MIT"
