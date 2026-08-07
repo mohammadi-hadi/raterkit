@@ -1,0 +1,25 @@
+{
+  "title": "raterkit: audit a labeled dataset before you trust it",
+  "description": "Reliability, rogue-rater, drift and leakage diagnostics for labelled data — on the raw GoEmotions ratings, 27 of 28 emotions fall below the 0.667 agreement floor.",
+  "creators": [
+    {
+      "name": "Mohammadi, Hadi",
+      "orcid": "0000-0003-0860-9200",
+      "affiliation": "Utrecht University"
+    }
+  ],
+  "license": "mit",
+  "upload_type": "software",
+  "keywords": [
+    "annotation",
+    "annotation quality",
+    "crowdsourcing",
+    "data quality",
+    "inter rater reliability",
+    "krippendorff alpha",
+    "llm evaluation",
+    "machine learning",
+    "nlp",
+    "python"
+  ]
+}
