@@ -5,6 +5,7 @@ Audit a labeled dataset before you trust it.
 [![ci](https://github.com/mohammadi-hadi/raterkit/actions/workflows/ci.yml/badge.svg)](https://github.com/mohammadi-hadi/raterkit/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/raterkit)](https://pypi.org/project/raterkit/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21810143.svg)](https://doi.org/10.5281/zenodo.21810143)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Every benchmark score, every fine-tune, every "our judge agrees with humans
 92% of the time" bottoms out in a pile of human labels — produced by raters
