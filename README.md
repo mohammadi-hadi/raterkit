@@ -237,7 +237,7 @@ resolves to the latest version; structured metadata is in
   title   = {raterkit: audit a labeled dataset before you trust it},
   url     = {https://github.com/mohammadi-hadi/raterkit},
   doi     = {10.5281/zenodo.21810143},
-  version = {0.1.0},
+  version = {0.1.1},
   year    = {2026}
 }
 ```
