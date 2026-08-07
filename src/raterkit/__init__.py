@@ -1,4 +1,4 @@
-"""raterkit: audit a labeled dataset before you trust it."""
+"""raterkit: reliability, rogue-rater, drift and leakage diagnostics for labelled data."""
 
 from .probes import run_audit
 from .result import AuditResult, ProbeResult, SkippedProbe

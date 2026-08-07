@@ -1,6 +1,6 @@
 # raterkit
 
-Audit a labeled dataset before you trust it.
+Reliability, rogue-rater, drift and leakage diagnostics for labelled data.
 
 [![ci](https://github.com/mohammadi-hadi/raterkit/actions/workflows/ci.yml/badge.svg)](https://github.com/mohammadi-hadi/raterkit/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/raterkit)](https://pypi.org/project/raterkit/)

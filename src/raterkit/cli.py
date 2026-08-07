@@ -15,7 +15,8 @@ from .schema import Config, load_config, load_gold, load_ratings
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
-        prog="raterkit", description="Audit a labeled dataset before you trust it."
+        prog="raterkit",
+        description="Reliability, rogue-rater, drift and leakage diagnostics for labelled data.",
     )
     parser.add_argument("--version", action="version", version=f"raterkit {__version__}")
     sub = parser.add_subparsers(dest="command", required=True)
