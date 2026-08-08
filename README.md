@@ -1,11 +1,16 @@
-# raterkit
+<div align="center">
 
-Reliability, rogue-rater, drift and leakage diagnostics for labelled data.
+# raterkit
 
 [![ci](https://github.com/mohammadi-hadi/raterkit/actions/workflows/ci.yml/badge.svg)](https://github.com/mohammadi-hadi/raterkit/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/raterkit)](https://pypi.org/project/raterkit/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21810143.svg)](https://doi.org/10.5281/zenodo.21810143)
+[![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+*Reliability, rogue-rater, drift and leakage diagnostics for labelled data.*
+
+</div>
 
 Every benchmark score, every fine-tune, every "our judge agrees with humans
 92% of the time" bottoms out in a pile of human labels — produced by raters
