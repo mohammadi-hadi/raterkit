@@ -218,16 +218,11 @@ study audits the GoEmotions raw ratings
 raterkit's contribution is packaging the checks as one auditable tool with
 uncertainty on every number and validation by implantation.
 
-Companion projects: [judgekit](https://github.com/mohammadi-hadi/judgekit)
-audits LLM judges the way this audits human raters;
-[judgepanel](https://github.com/mohammadi-hadi/judgepanel) estimates how
-accurate a panel of judges is when no gold labels exist at all;
-[abkit](https://github.com/mohammadi-hadi/abkit) applies the same
-audit-before-you-trust pattern to A/B-test readouts;
-[trajectory-judge](https://github.com/mohammadi-hadi/trajectory-judge)
-measures what outcome-only judges miss on agent trajectories;
-[arenakit](https://github.com/mohammadi-hadi/arenakit) audits the pairwise
-leaderboards those labels and judgements end up building.
+## Part of evalstack
+
+[evalstack](https://github.com/mohammadi-hadi/evalstack) is the map of these
+eleven evaluation tools: what each one measures, what it found on real data,
+and the two chains that run end to end.
 
 ## Citation
 
