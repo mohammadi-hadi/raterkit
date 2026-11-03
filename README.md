@@ -6,7 +6,7 @@
 [![PyPI](https://img.shields.io/pypi/v/raterkit)](https://pypi.org/project/raterkit/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21810143.svg)](https://doi.org/10.5281/zenodo.21810143)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/mohammadi-hadi/raterkit/blob/main/LICENSE)
 
 *Reliability, rogue-rater, drift and leakage diagnostics for labelled data.*
 
@@ -46,21 +46,21 @@ the skew, not the raters, is doing the agreeing. Raw agreement percentages
 cannot be compared across datasets with different label distributions, which
 is why every agreement number here is chance-corrected.
 
-![rater forest](results/figures/rater_forest.png)
+![rater forest](https://raw.githubusercontent.com/mohammadi-hadi/raterkit/main/results/figures/rater_forest.png)
 
-![depth curve](results/figures/depth_curve.png)
+![depth curve](https://raw.githubusercontent.com/mohammadi-hadi/raterkit/main/results/figures/depth_curve.png)
 
-`make demo` regenerates the table, the [full report](results/report.md) and
+`make demo` regenerates the table, the [full report](https://github.com/mohammadi-hadi/raterkit/blob/main/results/report.md) and
 the figures from fixed seeds; CI rebuilds them from pinned dependencies and
 fails if a committed number differs from what the code produces.
 
 ## 211,225 real ratings, audited
 
-[`examples/goemotions/`](examples/goemotions/) audits the raw crowd ratings
+[`examples/goemotions/`](https://github.com/mohammadi-hadi/raterkit/tree/main/examples/goemotions) audits the raw crowd ratings
 behind [GoEmotions](https://aclanthology.org/2020.acl-main.372/) — 211,225
 ratings by 82 raters over 58,011 Reddit comments, 28 binary emotion labels
 each. Committed results:
-[examples/goemotions/results/goemotions.md](examples/goemotions/results/goemotions.md).
+[examples/goemotions/results/goemotions.md](https://github.com/mohammadi-hadi/raterkit/blob/main/examples/goemotions/results/goemotions.md).
 
 - **27 of 28 emotions sit below the 0.667 reliability floor** — the whole
   95% CI, not just the point estimate. Only *gratitude* (alpha 0.72) passes;
@@ -170,7 +170,7 @@ above them.
   variation, drift within ±0.10 alpha) and flag only when the whole CI
   leaves it. Exact procedures use conventions: the 0.667 floor, zero
   tolerance for cross-split duplicates. All constants live in one place
-  ([`probes.py`](src/raterkit/probes.py)) and are easy to disagree with.
+  ([`probes.py`](https://github.com/mohammadi-hadi/raterkit/blob/main/src/raterkit/probes.py)) and are easy to disagree with.
 - **Raters are compared to the pool, not to a standard.** A rater is rogue
   when their CI sits below the pool's CI — a claim about this project, not
   about an absolute bar their domain may not share.
@@ -229,7 +229,7 @@ and the two chains that run end to end.
 Releases are archived on Zenodo. Cite the concept DOI
 [10.5281/zenodo.21810143](https://doi.org/10.5281/zenodo.21810143), which always
 resolves to the latest version; structured metadata is in
-[CITATION.cff](CITATION.cff).
+[CITATION.cff](https://github.com/mohammadi-hadi/raterkit/blob/main/CITATION.cff).
 
 ```bibtex
 @software{mohammadi_raterkit,
